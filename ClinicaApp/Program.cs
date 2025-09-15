@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Registrar DbContext con la conexión (aún no configuramos cadena real)
 builder.Services.AddDbContext<ClinicaDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ClinicaDb")));
 
 
 // Add services to the container.
