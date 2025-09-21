@@ -3,6 +3,16 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Clínica en la Nube</h1>
+    <p>Bienvenido, elige una opción:</p>
+
+    <p>
+        <a asp-controller="Pacientes" asp-action="Index" class="btn btn-primary">Gestionar Pacientes</a>
+    </p>
+    <p>
+        <a asp-controller="Citas" asp-action="Index" class="btn btn-secondary">Gestionar Citas</a>
+    </p>
+    <p>
+        <a asp-controller="HistorialMedico" asp-action="Index" class="btn btn-info">Ver Historial Médico</a>
+    </p>
 </div>
