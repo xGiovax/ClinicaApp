@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ClinicaApp.Models
 {
@@ -15,7 +16,10 @@ namespace ClinicaApp.Models
         public string Motivo { get; set; }
 
         // Relación con Paciente
+        [Required]
+        [ForeignKey("Paciente")]
         public int PacienteId { get; set; }
         public Paciente Paciente { get; set; }
     }
 }
+
